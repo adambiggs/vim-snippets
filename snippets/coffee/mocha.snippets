@@ -1,0 +1,24 @@
+# Before each
+snippet beforeEach
+	beforeEach (done)->
+		${1}
+		done()
+# After each
+snippet afterEach
+	afterEach (done)->
+		${1}
+		done()
+# Describe
+snippet describe
+	describe '${1:description}', ->
+		
+		${2}
+# It (async)
+snippet it
+	it '${1:description}', (done)->
+		${2}
+		done()
+# It (promise)
+snippet itp
+	it '${1:description}', ->
+		${2}
