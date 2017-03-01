@@ -21,3 +21,13 @@ endsnippet
 snippet calledAfter "Should've been called after ___ (js)" b
 $1.should.have.been.calledAfter($0)
 endsnippet
+
+# Sinon spying/stubbing with a Sandbox defined as `sb`.
+
+snippet stub "Sinon stub (js)" b
+sb.stub($1, '$0')
+endsnippet
+
+snippet spy "Sinon spy (js)" b
+sb.spy($1, '$0')
+endsnippet
