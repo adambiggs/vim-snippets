@@ -1,0 +1,23 @@
+priority -50
+
+# Commonly used Sinon-Chai assertions in StandardJS style.
+
+snippet calledOnce "Should've been called once (js)" b
+$1.should.have.been.calledOnce
+endsnippet
+
+snippet calledWith "Should've been called with ___ (js)" b
+$1.should.have.been.calledWith($0)
+endsnippet
+
+snippet notCalled "Shouldn't have been called (js)" b
+$1.should.not.have.been.called
+endsnippet
+
+snippet calledBefore "Should've been called before ___ (js)" b
+$1.should.have.been.calledBefore($0)
+endsnippet
+
+snippet calledAfter "Should've been called after ___ (js)" b
+$1.should.have.been.calledAfter($0)
+endsnippet
